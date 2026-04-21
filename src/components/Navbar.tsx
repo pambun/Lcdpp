@@ -89,12 +89,9 @@ export default function Navbar({ onNavigate, currentPage }: NavbarProps) {
                  (e.target as HTMLImageElement).nextElementSibling?.classList.remove('hidden');
                }}
             />
+            {/* Fallback icon only on hover if image is missing */}
             <div className="hidden group-hover:flex items-center gap-2">
                <div className="w-10 h-10 bg-primary flex items-center justify-center rounded-lg text-white font-bold text-xl font-display">L</div>
-            </div>
-            <div className="hidden sm:block">
-              <h1 className="text-xl font-display font-bold leading-none tracking-tight text-primary">LCDPP</h1>
-              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-accent">Diplomacy & Policy</p>
             </div>
           </div>
 
