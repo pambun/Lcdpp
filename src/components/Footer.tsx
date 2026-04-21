@@ -35,10 +35,21 @@ export default function Footer({ onNavigate }: FooterProps) {
           <div>
             <h4 className="text-lg font-semibold mb-6 uppercase tracking-wider text-accent">Quick Links</h4>
             <ul className="space-y-4">
-              {['African Union', 'United Nations', 'COMESA', 'ECOWAS', 'SADC'].map((link) => (
-                <li key={link}>
-                  <a href="#" className="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
-                    <ChevronRight size={14} /> {link}
+              {[
+                { name: 'African Union (AU)', url: 'https://au.int' },
+                { name: 'United Nations (UN)', url: 'https://www.un.org' },
+                { name: 'COMESA', url: 'https://www.comesa.int' },
+                { name: 'ECOWAS', url: 'https://ecowas.int' },
+                { name: 'SADC', url: 'https://www.sadc.int' }
+              ].map((link) => (
+                <li key={link.name}>
+                  <a 
+                    href={link.url} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-gray-300 hover:text-white transition-colors flex items-center gap-2"
+                  >
+                    <ChevronRight size={14} /> {link.name}
                   </a>
                 </li>
               ))}

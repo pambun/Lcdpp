@@ -137,19 +137,22 @@ export default function HomeContent({ onNavigate }: HomeContentProps) {
             <h2 className="text-4xl heading-serif mt-2 text-primary">Strategic Partners</h2>
           </div>
           
-          <div className="flex flex-wrap justify-center items-center gap-16 lg:gap-24 opacity-80 grayscale hover:grayscale-0 transition-all">
-            <div className="h-20 w-48 flex items-center justify-center">
+          <div className="flex flex-wrap justify-center items-center gap-8 lg:gap-12 opacity-80 grayscale hover:grayscale-0 transition-all">
+            <a href="https://au.int" target="_blank" rel="noopener noreferrer" className="h-16 w-40 flex items-center justify-center">
               <img src="/au.png" alt="African Union" className="max-h-full max-w-full object-contain" referrerPolicy="no-referrer" />
-            </div>
-            <div className="h-20 w-48 flex items-center justify-center">
+            </a>
+            <a href="https://www.un.org" target="_blank" rel="noopener noreferrer" className="h-16 w-40 flex items-center justify-center">
               <img src="/un.png" alt="United Nations" className="max-h-full max-w-full object-contain" referrerPolicy="no-referrer" />
-            </div>
-            <div className="h-20 w-48 flex items-center justify-center">
+            </a>
+            <a href="https://www.comesa.int" target="_blank" rel="noopener noreferrer" className="h-16 w-40 flex items-center justify-center">
               <img src="/comesa.png" alt="COMESA" className="max-h-full max-w-full object-contain" referrerPolicy="no-referrer" />
-            </div>
-            <div className="h-20 w-48 flex items-center justify-center">
+            </a>
+            <a href="https://ecowas.int" target="_blank" rel="noopener noreferrer" className="h-16 w-40 flex items-center justify-center">
+              <img src="/ECOWAS.png" alt="ECOWAS" className="max-h-full max-w-full object-contain" referrerPolicy="no-referrer" />
+            </a>
+            <a href="https://www.sadc.int" target="_blank" rel="noopener noreferrer" className="h-16 w-40 flex items-center justify-center">
               <img src="/sadc.png" alt="SADC" className="max-h-full max-w-full object-contain" referrerPolicy="no-referrer" />
-            </div>
+            </a>
           </div>
         </div>
       </section>
