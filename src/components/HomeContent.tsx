@@ -88,16 +88,14 @@ export default function HomeContent({ onNavigate }: HomeContentProps) {
       </section>
 
       {/* Latest Publications */}
-      <section className="py-24">
+      <section className="py-24 bg-white">
         <div className="container mx-auto px-6">
-          <div className="flex flex-col lg:row items-center justify-between mb-12 gap-4">
-            <div>
-              <h2 className="text-4xl heading-serif text-primary">Latest Publications</h2>
-              <p className="text-gray-600 mt-2">Expert perspectives on the evolving landscape of African policy.</p>
-            </div>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl heading-serif text-primary">Latest Publications</h2>
+            <p className="text-gray-600 mt-2 max-w-2xl mx-auto">Expert perspectives on the evolving landscape of African policy.</p>
             <button 
               onClick={() => onNavigate('resources')}
-              className="btn-outline"
+              className="btn-outline mt-8"
             >
               View All Research
             </button>
@@ -132,7 +130,7 @@ export default function HomeContent({ onNavigate }: HomeContentProps) {
       </section>
 
       {/* Partners Teaser */}
-      <section className="py-24 bg-white border-y border-gray-100">
+      <section className="py-24 bg-paper border-y border-gray-100">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <span className="text-accent font-bold uppercase tracking-widest text-sm">Collaboration</span>

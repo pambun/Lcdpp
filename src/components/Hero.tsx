@@ -73,11 +73,11 @@ export default function Hero({ onNavigate }: HeroProps) {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="relative"
+            className="relative lg:mt-12"
           >
             <div className="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl relative z-10 border-8 border-white">
               <img 
-                src="https://images.unsplash.com/photo-1523292562811-8fa7962a78c8?q=80&w=2670&auto=format&fit=crop" 
+                src="/hu-chen-60XLoOgwkfA-unsplash.jpg" 
                 alt="African Diplomacy"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
