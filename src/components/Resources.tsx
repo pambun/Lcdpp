@@ -3,11 +3,11 @@ import { FileText, Newspaper, Mic2, Tv2, Calendar } from 'lucide-react';
 
 export default function ResourcesContent() {
   const resourceCategories = [
-    { name: 'Newsletter', icon: Newspaper, count: '12 Issues', color: 'bg-blue-500' },
-    { name: 'Research Papers', icon: FileText, count: '45 Papers', color: 'bg-emerald-500' },
-    { name: 'Press Statements', icon: Mic2, count: '28 Statements', color: 'bg-amber-500' },
-    { name: 'Press Releases', icon: Tv2, count: '15 Releases', color: 'bg-purple-500' },
-    { name: 'Media Stories', icon: Calendar, count: '64 Stories', color: 'bg-rose-500' },
+    { name: 'Newsletter', icon: Newspaper, count: '12 Issues', color: 'bg-olive' },
+    { name: 'Research Papers', icon: FileText, count: '45 Papers', color: 'bg-secondary' },
+    { name: 'Press Statements', icon: Mic2, count: '28 Statements', color: 'bg-accent' },
+    { name: 'Press Releases', icon: Tv2, count: '15 Releases', color: 'bg-burnt-orange' },
+    { name: 'Media Stories', icon: Calendar, count: '64 Stories', color: 'bg-arc' },
   ];
 
   return (
@@ -26,9 +26,9 @@ export default function ResourcesContent() {
              <motion.div
                key={i}
                whileHover={{ y: -5 }}
-               className="p-8 rounded-3xl bg-white border border-gray-100 flex flex-col items-center text-center shadow-sm cursor-pointer hover:shadow-md transition-all"
+               className="p-8 rounded-3xl bg-white border border-gray-100 flex flex-col items-center text-center shadow-sm cursor-pointer hover:shadow-md transition-all group"
              >
-                <div className={`w-14 h-14 ${cat.color} text-white rounded-full flex items-center justify-center mb-6`}>
+                <div className={`w-14 h-14 ${cat.color} text-white rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform`}>
                   <cat.icon size={28} />
                 </div>
                 <h3 className="font-serif font-bold text-primary mb-2">{cat.name}</h3>
@@ -68,13 +68,13 @@ export default function ResourcesContent() {
                  viewport={{ once: true }}
                  className="group p-8 bg-white rounded-3xl border border-gray-100 flex flex-col md:flex-row items-center md:items-start gap-8 hover:shadow-xl hover:border-accent/20 transition-all cursor-pointer"
                >
-                  <div className="w-20 h-20 bg-primary/5 rounded-2xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors shrink-0">
+                  <div className="w-20 h-20 bg-paper rounded-2xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors shrink-0">
                      <FileText size={40} />
                   </div>
                   <div className="flex-1 text-center md:text-left">
                      <div className="flex flex-wrap justify-center md:justify-start gap-3 mb-4">
-                        <span className="px-3 py-1 bg-paper text-primary text-[10px] font-bold uppercase tracking-widest rounded-full border border-primary/5">Research Paper</span>
-                        <span className="px-3 py-1 bg- paper text-accent text-[10px] font-bold uppercase tracking-widest rounded-full border border-accent/5">April 2024</span>
+                        <span className="px-3 py-1 bg-olive/10 text-olive text-[10px] font-bold uppercase tracking-widest rounded-full border border-olive/5">Research Paper</span>
+                        <span className="px-3 py-1 bg-gold-light/10 text-accent text-[10px] font-bold uppercase tracking-widest rounded-full border border-gold-light/5">April 2024</span>
                      </div>
                      <h3 className="text-xl lg:text-2xl font-serif font-bold text-primary mb-4 group-hover:text-accent transition-colors leading-snug">{pub.title}</h3>
                      <p className="text-gray-600 leading-relaxed max-w-4xl">{pub.description}</p>

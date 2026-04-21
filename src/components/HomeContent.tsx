@@ -12,17 +12,20 @@ export default function HomeContent({ onNavigate }: HomeContentProps) {
     {
       title: 'Policy Research & Publications',
       description: 'Groundbreaking analysis on African diplomacy, governance and international relations published quarterly.',
-      icon: BookText
+      icon: BookText,
+      color: 'bg-olive/10 text-olive'
     },
     {
       title: 'Diplomatic Capacity Building',
       description: 'Executive training programs for African foreign service officers and multilateral negotiators.',
-      icon: GraduationCap
+      icon: GraduationCap,
+      color: 'bg-secondary/10 text-secondary'
     },
     {
       title: 'Peace & Mediation Support',
       description: 'Conflict resolution frameworks tailored to African contexts through our expert networks.',
-      icon: Handshake
+      icon: Handshake,
+      color: 'bg-burnt-orange/10 text-burnt-orange'
     }
   ];
 
@@ -53,11 +56,11 @@ export default function HomeContent({ onNavigate }: HomeContentProps) {
             <p className="text-lg text-gray-700 leading-relaxed mb-10">
               The Leadwood Centre for Diplomacy and Public Policy (LCDPP) is a Pan-African think tank committed to promoting transformative diplomacy, evidence-based policy, and sustainable development across the continent. Established to respond to the growing need for African-led solutions to African challenges, LCDPP acts as a hub for research, advocacy, dialogue, and capacity building.
             </p>
-            <div className="w-24 h-1 bg-accent mx-auto" />
+            <div className="w-24 h-1 bg-arc mx-auto" />
           </div>
         </div>
       </section>
-
+      
       {/* Our Work */}
       <section className="py-24 bg-paper relative overflow-hidden">
         <div className="container mx-auto px-6">
@@ -73,7 +76,7 @@ export default function HomeContent({ onNavigate }: HomeContentProps) {
                 whileHover={{ y: -10 }}
                 className="bg-white p-10 rounded-3xl border border-primary/5 shadow-sm hover:shadow-xl transition-all"
               >
-                <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-8">
+                <div className={`w-14 h-14 ${item.color} rounded-2xl flex items-center justify-center mb-8`}>
                   <item.icon size={28} />
                 </div>
                 <h3 className="text-xl font-serif font-bold mb-4 text-primary">{item.title}</h3>
@@ -129,20 +132,24 @@ export default function HomeContent({ onNavigate }: HomeContentProps) {
       </section>
 
       {/* Partners Teaser */}
-      <section className="py-16 bg-white border-y border-gray-100">
+      <section className="py-24 bg-white border-y border-gray-100">
         <div className="container mx-auto px-6">
-          <p className="text-center text-xs font-bold uppercase tracking-[0.3em] text-gray-400 mb-10">Our Partners</p>
-          <div className="flex flex-wrap justify-center items-center gap-12 lg:gap-20 opacity-70 grayscale hover:grayscale-0 transition-all">
-            <div className="h-16 w-32 flex items-center justify-center">
+          <div className="text-center mb-16">
+            <span className="text-accent font-bold uppercase tracking-widest text-sm">Collaboration</span>
+            <h2 className="text-4xl heading-serif mt-2 text-primary">Strategic Partners</h2>
+          </div>
+          
+          <div className="flex flex-wrap justify-center items-center gap-16 lg:gap-24 opacity-80 grayscale hover:grayscale-0 transition-all">
+            <div className="h-20 w-48 flex items-center justify-center">
               <img src="/au.png" alt="African Union" className="max-h-full max-w-full object-contain" referrerPolicy="no-referrer" />
             </div>
-            <div className="h-12 w-32 flex items-center justify-center">
+            <div className="h-20 w-48 flex items-center justify-center">
               <img src="/un.png" alt="United Nations" className="max-h-full max-w-full object-contain" referrerPolicy="no-referrer" />
             </div>
-            <div className="h-16 w-32 flex items-center justify-center">
+            <div className="h-20 w-48 flex items-center justify-center">
               <img src="/comesa.png" alt="COMESA" className="max-h-full max-w-full object-contain" referrerPolicy="no-referrer" />
             </div>
-            <div className="h-12 w-32 flex items-center justify-center">
+            <div className="h-20 w-48 flex items-center justify-center">
               <img src="/sadc.png" alt="SADC" className="max-h-full max-w-full object-contain" referrerPolicy="no-referrer" />
             </div>
           </div>
