@@ -13,19 +13,19 @@ export default function HomeContent({ onNavigate }: HomeContentProps) {
       title: 'Policy Research & Publications',
       description: 'Groundbreaking analysis on African diplomacy, governance and international relations published quarterly.',
       icon: BookText,
-      color: 'bg-olive/10 text-olive'
+      color: 'bg-gold-light/5'
     },
     {
       title: 'Diplomatic Capacity Building',
       description: 'Executive training programs for African foreign service officers and multilateral negotiators.',
       icon: GraduationCap,
-      color: 'bg-secondary/10 text-secondary'
+      color: 'bg-gold-light/5'
     },
     {
       title: 'Peace & Mediation Support',
       description: 'Conflict resolution frameworks tailored to African contexts through our expert networks.',
       icon: Handshake,
-      color: 'bg-burnt-orange/10 text-burnt-orange'
+      color: 'bg-gold-light/5'
     }
   ];
 
@@ -166,10 +166,11 @@ function ArrowRight({ size }: { size: number }) {
       height={size} 
       viewBox="0 0 24 24" 
       fill="none" 
-      stroke="currentColor" 
+      stroke="#F2C14E" 
       strokeWidth="2" 
       strokeLinecap="round" 
       strokeLinejoin="round"
+      className="lucide"
     >
       <path d="M5 12h14m-7-7 7 7-7 7" />
     </svg>

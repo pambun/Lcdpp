@@ -51,7 +51,7 @@ export default function AboutContent() {
               transition={{ delay: i * 0.1 }}
               className="p-8 rounded-3xl bg-white border border-gray-100 shadow-sm"
             >
-              <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center text-accent mb-6">
+              <div className="w-12 h-12 bg-accent/5 rounded-full flex items-center justify-center mb-6">
                 <section.icon size={24} />
               </div>
               <h2 className="text-2xl font-serif font-bold mb-4 text-primary">{section.title}</h2>

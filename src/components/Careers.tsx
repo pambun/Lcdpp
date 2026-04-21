@@ -25,7 +25,7 @@ export default function CareersContent() {
              { title: 'Policy Interns', icon: Heart, desc: 'Passionate emerging thinkers looking to shape the future of African policy.' },
            ].map((job, i) => (
              <div key={i} className="p-10 rounded-[2.5rem] bg-white border border-gray-100 shadow-sm">
-                <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-8">
+                <div className="w-12 h-12 bg-primary/5 rounded-2xl flex items-center justify-center mb-8">
                   <job.icon size={24} />
                 </div>
                 <h3 className="text-2xl font-serif font-bold text-primary mb-4">{job.title}</h3>

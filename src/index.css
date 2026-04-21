@@ -40,6 +40,10 @@
   @apply font-serif tracking-tight;
 }
 
+.lucide {
+  color: #F2C14E;
+}
+
 .text-balance {
   text-wrap: balance;
 }

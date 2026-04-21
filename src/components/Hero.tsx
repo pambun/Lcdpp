@@ -57,12 +57,12 @@ export default function Hero({ onNavigate }: HeroProps) {
 
             <div className="mt-16 grid grid-cols-3 gap-8">
               {[
-                { icon: Globe, label: 'Continental Reach', color: 'text-accent' },
-                { icon: Shield, label: 'Peace & Stability', color: 'text-secondary' },
-                { icon: BookOpen, label: 'Policy Research', color: 'text-olive' },
+                { icon: Globe, label: 'Continental Reach' },
+                { icon: Shield, label: 'Peace & Stability' },
+                { icon: BookOpen, label: 'Policy Research' },
               ].map((item, i) => (
                 <div key={i} className="flex flex-col gap-2">
-                  <item.icon className={item.color} size={24} />
+                  <item.icon size={24} />
                   <span className="text-xs font-bold uppercase tracking-tighter text-primary/60">{item.label}</span>
                 </div>
               ))}

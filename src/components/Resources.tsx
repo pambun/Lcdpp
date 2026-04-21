@@ -3,11 +3,11 @@ import { FileText, Newspaper, Mic2, Tv2, Calendar } from 'lucide-react';
 
 export default function ResourcesContent() {
   const resourceCategories = [
-    { name: 'Newsletter', icon: Newspaper, count: '12 Issues', color: 'bg-olive' },
-    { name: 'Research Papers', icon: FileText, count: '45 Papers', color: 'bg-secondary' },
-    { name: 'Press Statements', icon: Mic2, count: '28 Statements', color: 'bg-accent' },
-    { name: 'Press Releases', icon: Tv2, count: '15 Releases', color: 'bg-burnt-orange' },
-    { name: 'Media Stories', icon: Calendar, count: '64 Stories', color: 'bg-arc' },
+    { name: 'Newsletter', icon: Newspaper, count: '12 Issues', color: 'bg-gold-light/10' },
+    { name: 'Research Papers', icon: FileText, count: '45 Papers', color: 'bg-gold-light/10' },
+    { name: 'Press Statements', icon: Mic2, count: '28 Statements', color: 'bg-gold-light/10' },
+    { name: 'Press Releases', icon: Tv2, count: '15 Releases', color: 'bg-gold-light/10' },
+    { name: 'Media Stories', icon: Calendar, count: '64 Stories', color: 'bg-gold-light/10' },
   ];
 
   return (
@@ -28,7 +28,7 @@ export default function ResourcesContent() {
                whileHover={{ y: -5 }}
                className="p-8 rounded-3xl bg-white border border-gray-100 flex flex-col items-center text-center shadow-sm cursor-pointer hover:shadow-md transition-all group"
              >
-                <div className={`w-14 h-14 ${cat.color} text-white rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform`}>
+                <div className={`w-14 h-14 ${cat.color} rounded-2xl flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform`}>
                   <cat.icon size={28} />
                 </div>
                 <h3 className="font-serif font-bold text-primary mb-2">{cat.name}</h3>

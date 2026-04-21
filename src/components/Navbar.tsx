@@ -65,9 +65,9 @@ export default function Navbar({ onNavigate, currentPage }: NavbarProps) {
               <span>Mogadishu - Somalia</span>
             </div>
             <div className="flex gap-4 items-center">
-               <a href="https://x.com/home" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors"><Twitter size={14} /></a>
-               <a href="https://www.linkedin.com/company/african-centre-for-diplomacy-and-public-policy/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors"><Linkedin size={14} /></a>
-               <a href="https://web.facebook.com/profile.php?id=61576623303140" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors"><Facebook size={14} /></a>
+               <a href="https://x.com/home" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity"><Twitter size={14} /></a>
+               <a href="https://www.linkedin.com/company/african-centre-for-diplomacy-and-public-policy/" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity"><Linkedin size={14} /></a>
+               <a href="https://web.facebook.com/profile.php?id=61576623303140" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity"><Facebook size={14} /></a>
             </div>
           </div>
         </div>
@@ -84,15 +84,7 @@ export default function Navbar({ onNavigate, currentPage }: NavbarProps) {
                alt="LCDPP Logo" 
                className="h-12 w-auto object-contain"
                referrerPolicy="no-referrer"
-               onError={(e) => {
-                 (e.target as HTMLImageElement).style.display = 'none';
-                 (e.target as HTMLImageElement).nextElementSibling?.classList.remove('hidden');
-               }}
             />
-            {/* Fallback icon only on hover if image is missing */}
-            <div className="hidden group-hover:flex items-center gap-2">
-               <div className="w-10 h-10 bg-primary flex items-center justify-center rounded-lg text-white font-bold text-xl font-display">L</div>
-            </div>
           </div>
 
           <div className="hidden lg:flex items-center gap-8">

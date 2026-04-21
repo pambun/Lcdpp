@@ -26,7 +26,7 @@ export default function ContactForm() {
             
             <div className="space-y-6">
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                <div className="w-12 h-12 rounded-full bg-paper/50 flex items-center justify-center">
                   <Mail size={20} />
                 </div>
                 <div>
@@ -36,7 +36,7 @@ export default function ContactForm() {
               </div>
               
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                <div className="w-12 h-12 rounded-full bg-paper/50 flex items-center justify-center">
                   <MapPin size={20} />
                 </div>
                 <div>
