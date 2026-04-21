@@ -134,16 +134,16 @@ export default function HomeContent({ onNavigate }: HomeContentProps) {
           <p className="text-center text-xs font-bold uppercase tracking-[0.3em] text-gray-400 mb-10">Our Partners</p>
           <div className="flex flex-wrap justify-center items-center gap-12 lg:gap-20 opacity-70 grayscale hover:grayscale-0 transition-all">
             <div className="h-16 w-32 flex items-center justify-center">
-              <img src="/logos/African_Union_logo.png" alt="African Union" className="max-h-full max-w-full object-contain" referrerPolicy="no-referrer" />
+              <img src="/au.png" alt="African Union" className="max-h-full max-w-full object-contain" referrerPolicy="no-referrer" />
             </div>
             <div className="h-12 w-32 flex items-center justify-center">
-              <img src="/logos/un.png" alt="United Nations" className="max-h-full max-w-full object-contain" referrerPolicy="no-referrer" />
+              <img src="/un.png" alt="United Nations" className="max-h-full max-w-full object-contain" referrerPolicy="no-referrer" />
             </div>
             <div className="h-16 w-32 flex items-center justify-center">
-              <img src="/logos/Logo_Comesa.svg.png" alt="COMESA" className="max-h-full max-w-full object-contain" referrerPolicy="no-referrer" />
+              <img src="/comesa.png" alt="COMESA" className="max-h-full max-w-full object-contain" referrerPolicy="no-referrer" />
             </div>
             <div className="h-12 w-32 flex items-center justify-center">
-              <img src="/logos/sadc.png" alt="SADC" className="max-h-full max-w-full object-contain" referrerPolicy="no-referrer" />
+              <img src="/sadc.png" alt="SADC" className="max-h-full max-w-full object-contain" referrerPolicy="no-referrer" />
             </div>
           </div>
         </div>
