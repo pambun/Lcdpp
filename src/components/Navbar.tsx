@@ -65,9 +65,9 @@ export default function Navbar({ onNavigate, currentPage }: NavbarProps) {
               <span>Mogadishu - Somalia</span>
             </div>
             <div className="flex gap-4 items-center">
-               <a href="https://x.com/home" className="hover:text-accent transition-colors"><Twitter size={14} /></a>
-               <a href="https://www.linkedin.com/company/african-centre-for-diplomacy-and-public-policy/" className="hover:text-accent transition-colors"><Linkedin size={14} /></a>
-               <a href="https://web.facebook.com/profile.php?id=61576623303140" className="hover:text-accent transition-colors"><Facebook size={14} /></a>
+               <a href="https://x.com/home" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors"><Twitter size={14} /></a>
+               <a href="https://www.linkedin.com/company/african-centre-for-diplomacy-and-public-policy/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors"><Linkedin size={14} /></a>
+               <a href="https://web.facebook.com/profile.php?id=61576623303140" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors"><Facebook size={14} /></a>
             </div>
           </div>
         </div>

@@ -74,7 +74,14 @@ export default function LeadershipContent() {
                         <p className="text-accent font-semibold">{leader.title}</p>
                       </div>
                       <div className="flex gap-3">
-                         <button className="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-gray-400 hover:text-accent hover:border-accent transition-all"><Linkedin size={18} /></button>
+                         <a 
+                           href="https://www.linkedin.com/company/african-centre-for-diplomacy-and-public-policy/" 
+                           target="_blank" 
+                           rel="noreferrer"
+                           className="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-gray-400 hover:text-accent hover:border-accent transition-all"
+                         >
+                           <Linkedin size={18} />
+                         </a>
                          <button className="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-gray-400 hover:text-accent hover:border-accent transition-all"><ExternalLink size={18} /></button>
                       </div>
                     </div>
@@ -109,7 +116,14 @@ export default function LeadershipContent() {
                        <p className="text-accent font-bold text-xs uppercase tracking-widest">{p.title}</p>
                        <div className="mt-6 flex gap-3 opacity-0 group-hover:opacity-100 transition-opacity">
                          <button className="text-gray-400 hover:text-primary transition-colors"><Mail size={16} /></button>
-                         <button className="text-gray-400 hover:text-primary transition-colors"><Linkedin size={16} /></button>
+                         <a 
+                           href="https://www.linkedin.com/company/african-centre-for-diplomacy-and-public-policy/" 
+                           target="_blank"
+                           rel="noreferrer"
+                           className="text-gray-400 hover:text-primary transition-colors"
+                         >
+                           <Linkedin size={16} />
+                         </a>
                        </div>
                     </motion.div>
                   ))}

@@ -26,9 +26,9 @@ export default function Footer({ onNavigate }: FooterProps) {
               Dialogue. Diplomacy. Development. Shaping Africa's diplomatic future through transformative leadership and evidence-based policy.
             </p>
             <div className="flex gap-4">
-              <a href="https://x.com/home" className="p-2 bg-white/10 rounded-full hover:bg-accent transition-colors"><Twitter size={18} /></a>
-              <a href="https://www.linkedin.com/company/african-centre-for-diplomacy-and-public-policy/" className="p-2 bg-white/10 rounded-full hover:bg-accent transition-colors"><Linkedin size={18} /></a>
-              <a href="https://web.facebook.com/profile.php?id=61576623303140" className="p-2 bg-white/10 rounded-full hover:bg-accent transition-colors"><Facebook size={18} /></a>
+              <a href="https://x.com/home" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/10 rounded-full hover:bg-accent transition-colors"><Twitter size={18} /></a>
+              <a href="https://www.linkedin.com/company/african-centre-for-diplomacy-and-public-policy/" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/10 rounded-full hover:bg-accent transition-colors"><Linkedin size={18} /></a>
+              <a href="https://web.facebook.com/profile.php?id=61576623303140" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/10 rounded-full hover:bg-accent transition-colors"><Facebook size={18} /></a>
             </div>
           </div>
 
